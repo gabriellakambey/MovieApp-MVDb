@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="225dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="5dp"
+    android:id="@+id/phone_cardview"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:id="@+id/background_color"
+        android:layout_width="150dp"
+        android:layout_height="225dp"
+        android:background="@color/dark_blue"
+        android:padding="7dp">
+
+
+        <ImageView
+            android:id="@+id/iv_rekom"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:src="@drawable/movie"/>
+
+        <TextView
+            android:id="@+id/tv_rekom_title"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:text="Movie Title"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/dark_blue"
+    android:background="@color/dark_blue"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/movie1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_backdrop"
+            android:layout_marginTop="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_movieDetail"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/purple_200">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_titleDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Judul Movie"
+                        android:textAlignment="center"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_rateDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="7.0/10"
+                        android:textAlignment="center"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_runtimeDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Relase date: 2020-05-21"
+                        android:textAlignment="center"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_relaseDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Relase date: 2020-05-21"
+                        android:textAlignment="center"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_overview"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/purple_200"
+                android:layout_below="@+id/cv_movieDetail"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="Overview"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="isi dari overview"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15dp"
+                    android:padding="20dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_trailer"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/purple_200"
+                android:layout_below="@+id/cv_overview"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="Trailer"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_reviews"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/purple_200"
+                android:layout_below="@+id/cv_trailer"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="Reviews"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_detailPoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/movie"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
